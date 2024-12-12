@@ -1,0 +1,7 @@
+The CSS property `content` is used with the `::before` and `::after` pseudo-elements to insert generated content.  However, if you don't specify a value, it might not always result in a predictable behavior across different browsers. Sometimes, it may cause unexpected rendering issues or no visible effect at all.  For example, the following code might not render anything visually if the browser does not default to any specific content for the pseudo-element.
+
+```css
+.element::before {
+  /* Missing content property */
+}
+```
