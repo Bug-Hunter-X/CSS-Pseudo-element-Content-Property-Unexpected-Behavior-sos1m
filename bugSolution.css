@@ -1,0 +1,12 @@
+To reliably use `::before` and `::after` pseudo-elements, always explicitly define the `content` property. This ensures consistent rendering across different browsers.  Even if you want whitespace, you need to explicitly declare it.
+
+```css
+.element::before {
+  content: ''; /* Explicitly set to an empty string */
+}
+
+.element::after {
+  content: " "; /*Explicitly set to a space*/
+}
+```
+By explicitly setting the `content` property, you eliminate the ambiguity and ensure the expected visual outcome.
